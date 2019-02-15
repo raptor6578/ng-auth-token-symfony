@@ -1,0 +1,25 @@
+{
+  "name": "ng-token-auth-symfony",
+  "version": "1.0.0",
+  "description": "jwt token auth and refresh",
+  "main": "bundles/tokenAuth.umd.js",
+  "module": "index.js",
+  "keywords": [
+    "angular",
+    "token",
+    "bearer",
+    "jwt",
+    "symfony",
+    "auth"
+  ],
+  "author": "DAMM Nicolas",
+  "license": "MIT",
+  "dependencies": {
+    "js-base64": "^2.5.1"
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.2.0-rc.0",
+    "@angular/core": "~7.2.0-rc.0",
+    "@angular/router": "~7.2.0-rc.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ng-token-auth",
+  "version": "1.0.0",
+  "description": "Angular token auth",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/bundles/tokenAuth.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/tokenAuth.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify"
+  },
+  "author": "DAMM Nicolas",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/compiler": "^7.2.4",
+    "@angular/compiler-cli": "^7.2.4",
+    "rollup": "^1.1.2",
+    "typescript": "~3.2.2",
+    "uglify-js": "^3.4.9"
+  }
+}
