@@ -5,7 +5,7 @@ This module was designed with a Symfony 3 API using LexikJWTAuthenticationBundle
 # Installation
 
 ```
-npm i --save ng-token-auth
+npm i --save ng-token-auth-symfony
 ```
 
 # Configuration
@@ -16,7 +16,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TokenAuthModule, ITokenConfig } from './token-auth';
+import { TokenAuthModule, ITokenConfig } from 'ng-token-auth-symfony';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
@@ -73,7 +73,7 @@ You can redirect your already identified users, for example from your main compo
 
 ```js
 import { Component } from '@angular/core';
-import {TokenAuthService} from 'token-auth';
+import {TokenAuthService} from 'ng-token-auth-symfony';
 import {Router} from '@angular/router';
 
 @Component({
@@ -96,7 +96,7 @@ export class AppComponent {
 ```js
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
-import {ITokenData, TokenAuthService} from 'token-auth';
+import {ITokenData, TokenAuthService} from 'ng-token-auth-symfony';
 
 @Component({
   selector: 'app-index',
@@ -129,7 +129,7 @@ exp: 1550234278,
 ​username: "your-username"
 ```
 
-##Html
+## Html
 
 ```html
 <form novalidate #loginForm="ngForm" (ngSubmit)="login(loginForm)">
@@ -149,7 +149,7 @@ exp: 1550234278,
 
 ```js
 import { Component, OnInit } from '@angular/core';
-import {TokenAuthService} from 'token-auth';
+import {TokenAuthService} from 'ng-token-auth-symfony';
 
 @Component({
   selector: 'app-member',
