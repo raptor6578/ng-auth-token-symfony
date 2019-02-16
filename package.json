@@ -1,6 +1,6 @@
 {
   "name": "ng-token-auth-symfony",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Angular token auth",
   "main": "index.js",
   "scripts": {

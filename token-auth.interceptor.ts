@@ -38,7 +38,7 @@ export class TokenInterceptor implements HttpInterceptor {
       }, (err: any) => {
         // Response error
         if (err instanceof HttpErrorResponse) {
-          if (err.status === 401 && request.url === this.auth.config.url.refresh) {
+          if (err.status === 401 && this.auth.connected && request.url === this.auth.config.url.refresh) {
             this.auth.logout();
           }
         }

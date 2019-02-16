@@ -121,7 +121,7 @@
                 }, function (err) {
                     // Response error
                     if (err instanceof http.HttpErrorResponse) {
-                        if (err.status === 401 && request.url === _this.auth.config.url.refresh) {
+                        if (err.status === 401 && _this.auth.connected && request.url === _this.auth.config.url.refresh) {
                             _this.auth.logout();
                         }
                     }
