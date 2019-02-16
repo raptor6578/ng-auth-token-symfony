@@ -55,7 +55,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {MemberComponent} from './member/member.component';
 import {IndexComponent} from './index/index.component';
-import {TokenAuthGuardService as AuthGuard} from 'token-auth';
+import {TokenAuthGuardService as AuthGuard} from 'ng-token-auth-symfony';
 
 const routes: Routes = [
   {path: '', component: IndexComponent},
